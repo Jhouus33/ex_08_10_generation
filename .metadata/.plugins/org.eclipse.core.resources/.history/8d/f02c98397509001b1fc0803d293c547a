@@ -1,0 +1,24 @@
+package ex_08_10;
+
+import java.util.Scanner;
+
+//2-	Ler 10 números e imprimir quantos são pares e quantos são ímpares. 
+public class ex2 {
+	public static void main (String args[]) {
+		int i, numAtual, pares = 0, impares = 0;
+		Scanner read = new Scanner(System.in);
+		for (i = 0; i < 10; i++) {
+			System.out.println("Digite um número inteiro: ");
+			numAtual= read.nextInt();
+			if(numAtual % 2 == 0) {
+				System.out.print(numAtual + ": par \n");
+				pares = pares + 1;
+			}else {
+				System.out.print(numAtual + ": ímpar \n");
+				impares = impares + 1;
+			}
+		}
+		System.out.println("\n Dos números digitados: \n " + pares + " são pares e " + impares + " são impares.");
+	}
+
+}

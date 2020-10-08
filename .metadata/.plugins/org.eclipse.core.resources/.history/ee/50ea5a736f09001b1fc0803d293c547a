@@ -1,0 +1,16 @@
+package ex_08_10;
+// 1-	Informar todos os números de 1000 a 1999 que quando divididos por 11 obtemos resto = 5. (FOR)
+
+
+public class ex1 {
+	public static void main (String args[]) {
+		int i;
+		for(i = 1000; i <= 1999; i++) {
+			
+				System.out.printf("\n %d", i);
+			
+		}
+	}
+	
+	
+}
