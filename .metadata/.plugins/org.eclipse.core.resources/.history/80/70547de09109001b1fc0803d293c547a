@@ -1,0 +1,52 @@
+package ex_08_10;
+//4-	Uma empresa desenvolveu uma pesquisa para saber as características psicológicas dos
+//		indivíduos de uma região. Para tanto, a cada uma das pessoas era perguntado: idade, sexo
+//		(1-feminino / 2-masculino / 3-Outros), e as opções (1, se a pessoa era calma; 2, se a pessoa
+//		era nervosa e 3, se a pessoa era agressiva). Pede-se para elaborar um sistema que permita ler
+//		os dados de 150 pessoas, calcule e mostre: 
+
+import java.util.Scanner;
+
+public class ex4 {
+	public static void main(String args[]) {
+		Scanner read = new Scanner(System.in);
+		int numParticipantes = 5;
+		long[] participantes = new long[numParticipantes];
+		long[] idParticipantes = new long[numParticipantes];
+		int i = 0, sexParticipante, femino = 0, masculino = 0, outros = 0;
+		
+		while(i < numParticipantes) {
+			System.out.println("Qual sua idade: ");
+			idParticipantes[i] = read.nextLong();
+			
+			System.out.println("Qual seu sexo: digite: \n 1-feminino \n 2-masculino \n 3-Outros ");
+			sexParticipante = read.nextInt();
+				if(sexParticipante == 1) {
+					femino = femino + 1;
+				}else if(sexParticipante == 2) {
+					masculino = masculino + 1
+				}else if(sexParticipante == 3) {
+					outros = outros + 1) 
+				}
+		}
+		
+		notaAlunos[]
+		
+		System.out.println("Digite sua idade: ");
+		participantes = read.nextInt();
+		
+		
+		
+		
+		
+			if(idade < 21 ) {
+				jovens = jovens + 1;
+			}else if(idade > 50) {
+				maduros = maduros + 1;
+				
+			}
+			System.out.println("Digite sua idade: ");
+			idade = read.nextInt();
+		}
+
+}

@@ -1,0 +1,47 @@
+package ex_08_10;
+//4-	Uma empresa desenvolveu uma pesquisa para saber as características psicológicas dos
+//		indivíduos de uma região. Para tanto, a cada uma das pessoas era perguntado: idade, sexo
+//		(1-feminino / 2-masculino / 3-Outros), e as opções (1, se a pessoa era calma; 2, se a pessoa
+//		era nervosa e 3, se a pessoa era agressiva). Pede-se para elaborar um sistema que permita ler
+//		os dados de 150 pessoas, calcule e mostre: 
+
+import java.util.Scanner;
+
+public class ex4 {
+	public static void main(String args[]) {
+		Scanner read = new Scanner(System.in);
+		int numParticipantes = 2;
+		long[] participantes = new long[numParticipantes];
+		long[] idParticipantes = new long[numParticipantes];
+		int i = 0, sexParticipante, persParticipante, femino = 0, masculino = 0, outros = 0, calma = 0, nervosa =0, agressiva = 0;
+		
+		while(i < numParticipantes) {
+			System.out.println("Qual sua idade: ");
+			idParticipantes[i] = read.nextLong();
+			
+			System.out.println("Qual seu sexo: digite: \n 1-feminino \n 2-masculino \n 3-Outros ");
+			sexParticipante = read.nextInt();
+				if(sexParticipante == 1) {
+					femino = femino + 1;
+				}else if(sexParticipante == 2) {
+					masculino = masculino + 1;
+				}else if(sexParticipante == 3) {
+					outros = outros + 1; 
+				}
+			System.out.println("Sobre sua personalidade escolha uma das opções: \n 1- se a pessoa era calma \n 2- se você é uma pessoa agressiva \n 3- se a pessoa era calma ");
+			persParticipante = read.nextInt();
+				if(persParticipante == 1) {
+					calma = calma + 1;
+				}else if(persParticipante == 2) {
+					nervosa = nervosa + 1;
+				}else if(persParticipante == 3) {
+					agressiva = agressiva + 1; 
+				}
+			i++;
+		}
+		
+		System.out.println("Na pesquisa realizada com " + femino + " participantes do sexo femino, " + masculino + " participantes do sexo masculino,  " + outros + " participantes que declararam outro. \n"  );
+		System.out.println("Sobre a personalidade " + calma + " participantes declararam ser calmos(as), " + nervosa + " participantes declararam ser uma pessoa nervosa,  " + agressiva + " participantes declararam ser uma pessoa agressiva /n"  );
+		
+	}
+}
